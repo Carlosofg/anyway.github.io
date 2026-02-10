@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    overflow: hidden; 
 }
 #title { /* INGRESAR TITULO*/
     color: white;
@@ -62,4 +63,16 @@ body {
 #imgUsuario {
 
     width: 50px;
+}
+
+#horaActual {
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans','Lucida Sans Regular';
+    text-align: center;
+    min-height:fit-content;
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
 }
