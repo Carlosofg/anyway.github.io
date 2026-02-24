@@ -1,6 +1,6 @@
 body {
     height: 100vh; /* ocupa toda la pantalla */
-    background-image: url(images/abstract-triangles-background.jpg);
+    background-image: url(images/fondo2.jpg);
     background-size: cover; /* cubre todo, pero puede recortar */
     background-position: center center; /* siempre centrado */
     background-repeat: no-repeat;
@@ -25,9 +25,16 @@ body {
 #btEntrar{/* BOTON ENTRAR */
         color: white;
         font-size: large;
+        font-weight: 500;
         margin-top: 12px;
-        background-color: transparent;
         border-radius: 12px;
+        background: transparent;
+        border-color:rgb(8, 174, 224);
+        transition: 0.1s ease;
+}
+#btEntrar:hover{
+
+    transform: scale(1.1);
 }
 #loginContainer {
     text-align: center;
@@ -53,16 +60,30 @@ body {
     border-style: solid ;
     font-size:medium;
     padding-bottom: 2px;
+    background: white;
+    border-color: transparent;
+}
+input:focus {
+    
+    background-color: white;
+    border-color: black;
+    border-width: 6px;
 }
 #password{ /* INPUT*/
     border-radius: 12px;
     border-style: solid;
     font-size: medium;
     padding-bottom: 2px;
+    background: white;
+    border-color: transparent;
 }
 #imgUsuario {
 
     width: 50px;
+    transition: 0.1s ease;
+}
+#imgUsuario:hover{
+    transform: scale(1.2);
 }
 
 #horaActual {

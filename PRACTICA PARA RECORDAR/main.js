@@ -1,31 +1,37 @@
+import { mostrarAlerta } from "./assets/windows.js";
+
 let Usuario = {
     nombre: "Carlos",
-    usuario: "carlos12",
+    usuario: "carlos",
     contrasena: 132
 };
 
 let inputUsuario = document.getElementById("user");
 let inputContrasena = document.getElementById("password");
-
+let btnEntrar = document.getElementById("btEntrar");
 
 function openMenu(){
 
-    window.location.href = "menu.html";
-    window.alert("Accediste correctamente");
+    mostrarAlerta("Accediste correctamente");
+    setTimeout(() => {
+        window.location.href = "menu.html";
+    },300)
 }
 
-function login(inputUsuario,inputContrasena){
+function login(){
 
     if (inputUsuario.value !== Usuario.usuario){
-        alert("Usuario o contraseña incorrectos");
+        mostrarAlerta("Usuario o contraseña incorrectos");
     }
-    else if( inputUsuario.value === Usuario.usuario && inputContrasena.value != Usuario.contrasena){
-        alert("Contraseña incorrecta");
+    else if(inputContrasena.value != Usuario.contrasena){
+        mostrarAlerta("Has ingresado una contraseña incorrecta");
     }
     else{
-        openMenu(inputUsuario, inputContrasena);
+        openMenu();
     }
 }
+
+btnEntrar.addEventListener("click",login);
 
 setInterval(() => {
     let hora = new Date().toLocaleTimeString("es-AR");

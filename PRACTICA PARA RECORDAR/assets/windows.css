@@ -1,0 +1,18 @@
+.alerta {
+    position: fixed;
+    top: -60px; /* empieza oculto arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: top 0.35s ease;
+    z-index: 1000;
+}
+
+.alerta.mostrar {
+    top: 20px; /* baja y se ve */
+}
