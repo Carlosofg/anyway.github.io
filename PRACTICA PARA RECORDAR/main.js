@@ -9,6 +9,7 @@ let Usuario = {
 let inputUsuario = document.getElementById("user");
 let inputContrasena = document.getElementById("password");
 let btnEntrar = document.getElementById("btEntrar");
+let rediLinkedin = document.getElementById("Linkedin");
 
 function openMenu(){
 
@@ -38,3 +39,10 @@ setInterval(() => {
     let eHora = document.getElementById("horaActual");
     eHora.innerText = hora;
 },100);
+
+function redirectLinkedin() {
+
+    window.open("https://www.linkedin.com/in/carlos-guevara-392551363/");
+
+}
+rediLinkedin.addEventListener("click",redirectLinkedin);

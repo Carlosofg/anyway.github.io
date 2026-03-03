@@ -97,3 +97,20 @@ input:focus {
     left: 50%;
     transform: translateX(-50%);
 }
+#Linkedin {
+    width: 6vh;
+    height: 6vh;
+    background-image: url(images/linkedin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    margin-top: 8%;
+    margin-left: 1%;
+    transition-duration: 0.3s;
+}
+#Linkedin:hover{
+    transform: scale(1.15);
+}
